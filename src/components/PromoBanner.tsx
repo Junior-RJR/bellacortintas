@@ -26,7 +26,7 @@ export default function PromoBanner() {
               Tecnologia de Ponta
             </motion.span>
             <h2 className="text-6xl md:text-8xl font-display font-black text-bellacor-blue leading-[0.9] mb-10 tracking-tighter">
-              A ciência por trás <br />
+              A ciência <br />por trás <br />
               da <span className="text-bellacor-orange">perfeição.</span>
             </h2>
             <p className="text-xl text-slate-500 mb-12 leading-relaxed font-medium">
@@ -63,7 +63,7 @@ export default function PromoBanner() {
               className="relative z-10 rounded-[80px] overflow-hidden shadow-[0_60px_120px_-20px_rgba(0,0,0,0.3)]"
             >
               <img 
-                src="https://storage.googleapis.com/generative-ai-media/bellacor_banner.jpg" 
+                src="https://www.cleanipedia.com/images/00d1hxgfwfa6/2Nf34prb6E4HEpV9WQW7nq/2a9e1a3935ff2ea13e072215a7d39caf/R2V0dHlJbWFnZXMtOTc1OTEyODg2LmpwZw/600w/uma-pessoa-pintando-a-parede-de-branco-com-um-rolo-de-pintura..jpg" 
                 alt="Ambiente Bellacor" 
                 className="w-full h-full object-cover aspect-[4/5]"
                 referrerPolicy="no-referrer"

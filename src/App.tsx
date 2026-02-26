@@ -1,8 +1,3 @@
-/**
- * @license
- * SPDX-License-Identifier: Apache-2.0
- */
-
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./components/Header";
@@ -31,7 +26,7 @@ export default function App() {
   });
 
   return (
-    <Router>
+    <Router basename="/bellacor">
       <ScrollToTop />
       <div className="min-h-screen selection:bg-bellacor-orange selection:text-white flex flex-col">
         {/* Progress Bar */}

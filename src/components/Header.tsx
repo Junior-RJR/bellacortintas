@@ -6,6 +6,10 @@ import { Link, useLocation } from "react-router-dom";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  
+  const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -17,27 +21,41 @@ export default function Header() {
   const isHome = location.pathname === "/";
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("/#") && isHome) {
+  if (href.startsWith("/#")) {
+    const id = href.replace("/#", "");
+
+    if (isHome) {
       e.preventDefault();
-      const id = href.replace("/#", "");
-      const element = document.getElementById(id);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
-        setIsOpen(false);
-      }
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
     }
-  };
+  }
+};
+
+  // const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  //   if (href.startsWith("/#") && isHome) {
+  //     e.preventDefault();
+  //     const id = href.replace("/#", "");
+  //     const element = document.getElementById(id);
+  //     if (element) {
+  //       element.scrollIntoView({ behavior: "smooth" });
+  //       setIsOpen(false);
+  //     }
+  //   }
+  // };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    // <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-bellacor-blue)] border-b border-blue-900/40 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link to="/" className="flex-shrink-0 flex items-center group">
+          {/* <Link to="/" className="flex-shrink-0 flex items-center group"> */}
+          <Link to="/" onClick={scrollToTop} className="flex-shrink-0 flex items-center group">
             <img 
-              src="file:///C:/Users/Junior/Documents/Desenvolvimento/bellacor/www/public/images/bela-tintas-loja.jpg" 
+              src="/images/bella-cor-logo.png"
               alt="Bellacor Logo" 
-              className="h-12 w-auto transition-transform group-hover:scale-105"
+              className="h-16 w-auto transition-transform group-hover:scale-105"
             />
           </Link>
 
@@ -47,12 +65,21 @@ export default function Header() {
               <Link
                 key={link.name}
                 to={link.href}
-                onClick={(e) => handleScroll(e, link.href)}
-                className={`text-[10px] uppercase tracking-[0.3em] font-black transition-all ${
-                  location.pathname === link.href 
-                    ? "text-bellacor-orange" 
-                    : "text-slate-400 hover:text-bellacor-blue"
-                }`}
+                // onClick={(e) => handleScroll(e, link.href)}
+                onClick={(e) => {
+                  if (link.href === "/") {
+                    scrollToTop();
+                  } else {
+                    handleScroll(e, link.href);
+                  }
+                }}
+                className="text-sm uppercase tracking-[0.25em] font-black text-white/80 hover:text-white transition-all"
+                // className={`text-sm uppercase tracking-[0.25em] font-black" transition-all ${
+                //   location.pathname === link.href 
+                //     ? "text-bellacor-orange" 
+                //     // : "text-slate-400 hover:text-bellacor-blue"
+                //     : "text-white/80 hover:text-white"
+                // }`}
               >
                 {link.name}
               </Link>
@@ -65,7 +92,7 @@ export default function Header() {
               href="https://wa.me/551125966684"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-bellacor-green text-white px-8 py-3 rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-green-600 transition-all shadow-xl hover:shadow-green-900/20"
+              className="flex items-center gap-3 bg-bellacor-green text-white px-8 py-3 rounded-full font-black uppercase tracking-widest text-sm uppercase tracking-[0.25em] font-black hover:bg-green-600 transition-all shadow-xl hover:shadow-green-900/20"
             >
               <Phone size={14} />
               <span>WhatsApp</span>
@@ -76,7 +103,8 @@ export default function Header() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-bellacor-blue p-2"
+              // className="text-slate-600 hover:text-bellacor-blue p-2"
+              className="text-white hover:text-white/80 p-2"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -89,7 +117,8 @@ export default function Header() {
         <motion.div
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: 1, height: "auto" }}
-          className="md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-1 overflow-hidden"
+          // className="md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-1 overflow-hidden"
+          className="md:hidden bg-[var(--color-bellacor-blue)] border-b border-blue-900/40 px-4 pt-2 pb-6 space-y-1 overflow-hidden"
         >
           {navLinks.map((link) => (
             <Link

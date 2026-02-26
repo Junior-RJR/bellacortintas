@@ -18,18 +18,19 @@ export default function Hero() {
       {/* Background Image with Opacity */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&q=80&w=1920" 
+          // src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&q=80&w=1920" 
+          src="images/bela-tintas-cores.jpeg"
           alt="Textura de Tinta" 
-          className="w-full h-full object-cover opacity-[0.05]"
+          className="w-full h-full object-cover opacity-[0.1]"
           referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_white_100%)] opacity-60" />
       </div>
 
       {/* Massive Background Text */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[25vw] font-black text-slate-50 select-none pointer-events-none z-0 whitespace-nowrap uppercase tracking-tighter">
+      {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[25vw] font-black text-slate-50 select-none pointer-events-none z-0 whitespace-nowrap uppercase tracking-tighter">
         Bellacor
-      </div>
+      </div> */}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -46,7 +47,7 @@ export default function Hero() {
                 Sua casa, <br />
                 <span className="text-bellacor-orange">sua cor.</span>
               </h1>
-              <p className="text-xl text-slate-500 max-w-lg mx-auto lg:mx-0 mb-12 leading-relaxed">
+              <p className="text-xl text-slate-1000 max-w-lg mx-auto lg:mx-0 mb-12 leading-relaxed">
                 Transforme ambientes com a tecnologia Bellacor. Simule tons reais e sinta a diferença de uma cobertura premium.
               </p>
               
@@ -73,7 +74,22 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
-                <Link to="/produtos" className="btn-primary px-12 py-5 text-lg shadow-[0_20px_40px_rgba(242,169,0,0.3)]">
+                {/* <Link to="/produtos" className="btn-primary px-12 py-5 text-lg flex items-center justify-center text-center shadow-[0_20px_40px_rgba(242,169,0,0.3)]">
+                  Explorar Catálogo
+                </Link> */}
+                <Link
+                  to="/produtos"
+                  className="
+                    px-12 py-5 text-lg font-bold
+                    flex items-center justify-center text-center
+                    rounded-full
+                    bg-bellacor-orange
+                    text-white
+                    hover:bg-bellacor-blue
+                    transition-colors duration-300
+                    shadow-[0_20px_40px_rgba(242,169,0,0.3)]
+                  "
+                >
                   Explorar Catálogo
                 </Link>
                 <a href="#contato" className="px-12 py-5 rounded-full border-2 border-slate-200 text-bellacor-blue font-black uppercase tracking-widest text-sm hover:bg-slate-50 transition-all">

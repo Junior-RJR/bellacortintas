@@ -29,8 +29,8 @@ export interface Product {
 
 /**
  * Para adicionar as imagens dos produtos:
- * 1. Coloque os arquivos de imagem na pasta /public/images/
- * 2. Atualize o campo 'image' com o caminho relativo, ex: "/images/tam1.jpg"
+ * 1. Coloque os arquivos de imagem na pasta /public/produtos/
+ * 2. Atualize o campo 'image' com o caminho relativo, ex: "/produtos/tam1.jpg"
  */
 export const products: Product[] = [
   {
@@ -52,9 +52,12 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Não",
     variants: [
-      { size: "25 KG", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "900 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      // { size: "25 KG", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
+      // { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
+      // { size: "900 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "25 KG", image: "/produtos/tam1.jpg" },
+      { size: "3,6 L", image: "/produtos/tam2.jpg" },
+      { size: "900 ML",image: "/produtos/tam3.jpg" }
     ]
   },
   {
@@ -76,7 +79,7 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Alta Cobertura",
     variants: [
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "3,6 L", image: "/produtos/267903-1.jpeg" },
     ]
   },
   {
@@ -98,8 +101,8 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Baixa ação",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/265250.jpg" },
+      { size: "3,6 L", image: "/produtos/266716.jpg" }
     ]
   },
   {
@@ -121,8 +124,9 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Não",
     variants: [
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "900 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "3,6 L", image: "/produtos/266052.jpg" },
+      { size: "900 ML",image: "/produtos/266075.jpg" }
+      
     ]
   },
   {
@@ -144,8 +148,9 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Não",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/265380.jpg" },
+      { size: "3,6 L", image: "/produtos/266876.jpg" }
+
     ]
   },
   {
@@ -167,8 +172,8 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Não",
     variants: [
-      { size: "3,2 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "800 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "3,2 L", image: "/produtos/277775.png" },
+      { size: "800 ML", image: "/produtos/277774.png" }
     ]
   },
   {
@@ -190,7 +195,7 @@ export const products: Product[] = [
     washable: false,
     antiMold: "-",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" }
+      { size: "18 L", image: "/produtos/265162.jpg" }
     ]
   },
   {
@@ -212,8 +217,8 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Não",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/265498.jpg" },
+      { size: "3,6 L", image: "/produtos/267263.jpg" }
     ]
   },
   {
@@ -235,7 +240,7 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Não",
     variants: [
-      { size: "5 KG", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "5 KG", image: "/produtos/2705431.jpg" },
     ]
   },
   {
@@ -257,8 +262,8 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Sim",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/265278.jpg" },
+      { size: "3,6 L", image: "/produtos/267128.jpg" }
     ]
   },
   {
@@ -280,8 +285,8 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Sim",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/267131.jpg" },
+      { size: "3,6 L", image: "/produtos/267128-2.jpg" }
     ]
   },
   {
@@ -303,9 +308,9 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Sim",
     variants: [
-      { size: "20 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "20 L", image: "/produtos/267616.jpg" },
+      { size: "18 L", image: "/produtos/265277-2.jpg" },
+      { size: "3,6 L", image: "/produtos/267132.jpg" }
     ]
   },
   {
@@ -327,10 +332,10 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Baixa ação",
     variants: [
-      { size: "20 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,2 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "900 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "20 L", image: "/produtos/265377.jpg" },
+      { size: "18 L", image: "/produtos/265246.jpg" },
+      { size: "3,2 L", image: "/produtos/267112.jpg" },
+      { size: "900 ML", image: "/produtos/267113.jpg" }
     ]
   },
   {
@@ -352,8 +357,8 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Não",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/selador18.jpg" },
+      { size: "3,6 L", image: "/produtos/selador3.6.jpg" }
     ]
   },
   {
@@ -375,7 +380,7 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Não",
     variants: [
-      { size: "12 KG", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" }
+      { size: "12 KG", image: "/produtos/267744.jpg" },
     ]
   },
   {
@@ -397,8 +402,8 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Sim",
     variants: [
-      { size: "3,2 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "800 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "3,2 L", image: "/produtos/277776.png" },
+      { size: "800 ML", image: "/produtos/277777.png" }
     ]
   },
   {
@@ -420,8 +425,8 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Não",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/265247.jpg" },
+      { size: "3,6 L", image: "/produtos/267114.jpg" }
     ]
   },
   {
@@ -443,8 +448,8 @@ export const products: Product[] = [
     washable: true,
     antiMold: "Sim",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "18 L", image: "/produtos/267893.jpg" },
+      { size: "3,6 L", image: "/produtos/267889.jpg" }
     ]
   },
   {
@@ -466,7 +471,7 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Não",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" }
+      { size: "18 L", image: "/produtos/266834-1.png" },
     ]
   },
   {
@@ -488,7 +493,7 @@ export const products: Product[] = [
     washable: false,
     antiMold: "-",
     variants: [
-      { size: "3,6 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" }
+      { size: "3,6 L", image: "/produtos/271157-1.png" }
     ]
   },
   {
@@ -510,8 +515,8 @@ export const products: Product[] = [
     washable: false,
     antiMold: "Sim",
     variants: [
-      { size: "3,2 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "800 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "3,2 L", image: "/produtos/265432.jpg" },
+      { size: "800 ML", image: "/produtos/265433.jpg" },
     ]
   },
   {
@@ -533,10 +538,10 @@ export const products: Product[] = [
     washable: false,
     antiMold: "-",
     variants: [
-      { size: "18 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "16 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_18l.png" },
-      { size: "3,2 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "800 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "18 L", image: "/produtos/277773.png" },
+      { size: "16 L", image: "/produtos/277771.png" },
+      { size: "3,2 L", image: "/produtos/277772.png" },
+      { size: "800 ML", image: "/produtos/277770.png" }
     ]
   },
   {
@@ -558,8 +563,8 @@ export const products: Product[] = [
     washable: false,
     antiMold: "-",
     variants: [
-      { size: "3,2 L", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_36l.png" },
-      { size: "800 ML", image: "https://storage.googleapis.com/generative-ai-media/bellacor_product_900ml.png" }
+      { size: "3,2 L", image: "/produtos/277779.png" },
+      { size: "800 ML", image: "/produtos/277778.png" },
     ]
   }
 ];

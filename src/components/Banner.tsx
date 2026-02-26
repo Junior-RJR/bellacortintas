@@ -65,7 +65,8 @@ export default function Banner({ title, subtitle, buttonText, buttonLink, varian
           <div className="relative h-[400px] md:h-auto overflow-hidden">
              <img 
                src={isBlue 
-                 ? "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000" 
+                ? "https://www.decorfacil.com/wp-content/uploads/2023/09/20240215cores-de-casas-17.jpg"
+                // ? "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=1000" 
                  : "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1000"
                } 
                alt="Banner" 

@@ -15,7 +15,7 @@ const categories = [
     title: "Linha Exterior",
     description: "Máxima proteção contra sol e chuva com alta durabilidade.",
     icon: <ExternalLink className="text-bellacor-blue" size={32} />,
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+    image: "https://blog.elevato.com.br/wp-content/uploads/2025/09/casa-moderna-fachada-azul-elegante-1024x683.webp",
     color: "bg-blue-50"
   },
   {
@@ -23,7 +23,7 @@ const categories = [
     title: "Complementos",
     description: "Massa corrida, seladores e fundos para preparação perfeita.",
     icon: <Layers className="text-bellacor-green" size={32} />,
-    image: "https://images.unsplash.com/photo-1589939705384-5185138a047a?auto=format&fit=crop&q=80&w=800",
+    image: "https://blog.arenatintas.com/wp-content/uploads/2023/06/acessorios-para-pintura.jpg",
     color: "bg-green-50"
   }
 ];

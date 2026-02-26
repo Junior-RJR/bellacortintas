@@ -19,9 +19,10 @@ export default function Footer() {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <img 
-                src="https://storage.googleapis.com/generative-ai-media/bellacor_logo.png" 
+                src="/images/bella-cor-logo.png"
                 alt="Bellacor Logo" 
-                className="h-10 w-auto brightness-0 invert"
+                // className="h-10 w-auto brightness-0 invert"
+                className="h-12 w-auto transition-transform group-hover:scale-105"
               />
             </div>
             <p className="text-slate-300 mb-8 leading-relaxed">
@@ -46,7 +47,7 @@ export default function Footer() {
               <li><Link to="/produtos" className="hover:text-white transition-colors">Produtos</Link></li>
               <li><Link to="/fispq" className="hover:text-white transition-colors">FISPQ</Link></li>
               <li><Link to="/boletim-tecnico" className="hover:text-white transition-colors">Boletim Técnico</Link></li>
-              <li><a href="#contato" className="hover:text-white transition-colors">Onde Comprar</a></li>
+              {/* <li><a href="#contato" className="hover:text-white transition-colors">Onde Comprar</a></li> */}
             </ul>
           </div>
 
@@ -56,7 +57,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-slate-300">
                 <MapPin className="text-bellacor-orange shrink-0" size={20} />
-                <span>Encontre uma loja próxima de você</span>
+                <span>Encontre uma loja</span>
               </li>
               <li className="flex items-center gap-3 text-slate-300">
                 <Phone className="text-bellacor-orange shrink-0" size={20} />
@@ -87,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-10 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm">
-          <p>© { getCurrentYearInSaoPaulo() } Rogério Junior | Todos os direitos reservados</p>
+          <p>© { getCurrentYearInSaoPaulo() } Bellacor Tintas | Todos os direitos reservados</p>
           <p className="flex items-center gap-1">
             Feito por 
             <a 
