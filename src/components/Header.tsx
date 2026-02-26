@@ -53,7 +53,7 @@ export default function Header() {
           {/* <Link to="/" className="flex-shrink-0 flex items-center group"> */}
           <Link to="/" onClick={scrollToTop} className="flex-shrink-0 flex items-center group">
             <img 
-              src="/images/bella-cor-logo.png"
+              src="images/bella-cor-logo.png"
               alt="Bellacor Logo" 
               className="h-16 w-auto transition-transform group-hover:scale-105"
             />

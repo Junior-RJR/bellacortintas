@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="col-span-1 lg:col-span-1">
             <div className="flex items-center gap-2 mb-6">
               <img 
-                src="/images/bella-cor-logo.png"
+                src="images/bella-cor-logo.png"
                 alt="Bellacor Logo" 
                 // className="h-10 w-auto brightness-0 invert"
                 className="h-12 w-auto transition-transform group-hover:scale-105"

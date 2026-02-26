@@ -76,9 +76,9 @@ export default function TechnicalDocs({ type }: TechnicalDocsProps) {
                   {doc.title}
                 </h3>
 
-                <p className="text-xs text-slate-400 mb-6">
+                {/* <p className="text-xs text-slate-400 mb-6">
                   {doc.filename}
-                </p>
+                </p> */}
               </div>
 
               <a
