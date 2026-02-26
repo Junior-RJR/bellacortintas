@@ -26,7 +26,7 @@ export default function App() {
   });
 
   return (
-    <Router basename="/bellacor">
+    <Router>
       <ScrollToTop />
       <div className="min-h-screen selection:bg-bellacor-orange selection:text-white flex flex-col">
         {/* Progress Bar */}
